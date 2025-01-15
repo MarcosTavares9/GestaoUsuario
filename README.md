@@ -18,6 +18,8 @@ O **Gestão PABX** é um sistema desenvolvido para gerenciar usuários de um sis
 ### **Banco de Dados**
 - **PostgreSQL**: Sistema de banco de dados relacional.
 
+### **Ferramentas de Teste**
+- **Insomnia**: Utilizado para testar o backend e as interações com o banco de dados durante o desenvolvimento.
 ---
 
 ## **Configuração do Ambiente**
@@ -173,6 +175,7 @@ Estrutura básica das tabelas no PostgreSQL:
 2. **React**: Utilizado pela familiaridade e pela flexibilidade para construção de interfaces dinâmicas.
 3. **Tailwind CSS**: Escolhido para estilização rápida e responsiva.
 4. **PostgreSQL**: Optado devido à sua segurança, escalabilidade e compatibilidade com AdonisJS.
+5. **Insomnia**: ferramenta escolhida para testar as APIs do backend de maneiira eficiente, garatindo que as requisições e respostas estejam corretas durante o desenvolvimento.
 
 ### **Aprendizado e Pesquisa**
 Cada tecnologia foi implementada após pesquisa aprofundada e prática, utilizando tutoriais, documentação oficial e discussões em fóruns para garantir qualidade e adoção de melhores práticas.
