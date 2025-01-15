@@ -55,8 +55,8 @@ Antes de começar, certifique-se de ter instalado:
 
 1. **Clonar o repositório**
    ```bash
-   git clone <url-do-repositório>
-   cd <nome-do-diretório>
+   git clone https://github.com/MarcosTavares9/GestaoUsuario.git
+   cd GestaoPabx
    ```
 
 2. **Instalar dependências**
