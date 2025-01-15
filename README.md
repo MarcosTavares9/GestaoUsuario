@@ -53,8 +53,8 @@ Antes de começar, certifique-se de ter instalado:
 
 1. **Clonar o repositório**
    ```bash
-   git clone <url-do-repositório>
-   cd <nome-do-diretório>
+   git clone <(https://github.com/MarcosTavares9/GestaoUsuario.git)>
+   cd GestaoPabx
    ```
 
 2. **Instalar dependências**
@@ -105,17 +105,12 @@ Para simplificar a execução do **frontend** e **backend** simultaneamente, uti
 
 ### **Instalar `concurrently`**
 ```bash
+
+###**Iniciar o servidor Simultânea**
 npm install concurrently --save-dev
 ```
 
-### **Adicionar Script ao `package.json`**
-No `package.json` da raiz, adicione o script:
-
-```json
-"scripts": {
-  "start:all": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\""
-}
-```
+concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"
 
 ### **Executar o Projeto**
 Agora, basta rodar o comando:
