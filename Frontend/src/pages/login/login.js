@@ -17,8 +17,8 @@ const Login = () => {
     e.preventDefault();
     setError(null);
 
-    try {
-      const response = await usuariosApi.post("/login", { email, senha });
+      try {
+      const response = await usuariosApi.post("/", { email, senha });
       const usuario = response.data.usuario;
 
       if (!usuario) {
@@ -27,20 +27,19 @@ const Login = () => {
       }
 
       localStorage.setItem("usuario", JSON.stringify(usuario));
-      navigate("/dashboard");
+      navigate("/usuarios");
     } catch (err) {
       setError(err.response?.data?.message || "Erro ao realizar login.");
       console.error("Erro no login:", err);
     }
   };
-
   const handleCadastro = async (e) => {
     e.preventDefault();
     setError(null);
     setSuccessMessage(null);
 
     try {
-      await usuariosApi.post("/usuarios", {
+      await usuariosApi.post("/", {
         nome: nomeCadastro,
         email: emailCadastro,
         senha: senhaCadastro,
