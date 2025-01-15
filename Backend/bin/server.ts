@@ -8,13 +8,6 @@
 | command to run this file and monitor file changes
 |
 */
-const express = require('express')
-const app = express()
-
-// Requerendo o módulo de configuração do Swagger
-require('./swaggerConfig')(app)
-
-// Demais configurações e rotas
 
 import 'reflect-metadata'
 import { Ignitor, prettyPrintError } from '@adonisjs/core'
