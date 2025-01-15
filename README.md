@@ -108,22 +108,12 @@ Para simplificar a execução do **frontend** e **backend** simultaneamente, uti
 npm install concurrently --save-dev
 ```
 
-### **Adicionar cript ao `package.json`**
-No `package.json` da raiz, adicione o script:
+### **Inicializar Simultâneamente**
+Esse comando inicializa os dois servidores simultaneamente:
 
-```json
-"scripts": {
-  "start:all": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\""
-}
 ```
-
-### **Executar o Projeto**
-Agora, basta rodar o comando:
-
-```bash
-npm run start:all
+concurrently "cd backend && npm run dev" "cd frontend && npm start"
 ```
-
 Isso iniciará os servidores do frontend e backend simultaneamente.
 
 ---
@@ -134,7 +124,7 @@ Isso iniciará os servidores do frontend e backend simultaneamente.
 
 #### **Rotas Principais**
 - `/`: Página de login.
-- `/cadastro`: Cadastro de novos logins.
+- `/`: Cadastro de novos logins.
 - `/usuarios`: Lista de usuários.
 - `/usuarios/cadastro`: Cadastro de novos usuários.
 - `/usuarioslogin`: Lista de logins de usuários.
@@ -192,7 +182,7 @@ Cada tecnologia foi implementada após pesquisa aprofundada e prática, utilizan
 ## **Uso**
 
 1. **Início do Sistema**
-   - Use `npm run start:all` para iniciar frontend e backend simultaneamente.
+   - Use `concurrently "cd backend && npm run dev" "cd frontend && npm start"` para iniciar frontend e backend simultaneamente.
    - Acesse a interface no navegador em [http://localhost:3000](http://localhost:3000).
 
 2. **Cadastro e Gerenciamento**
