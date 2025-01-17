@@ -146,8 +146,8 @@ Isso iniciará os servidores do frontend e backend simultaneamente.
 ## **Banco de Dados**
 
 Estrutura básica das tabelas no PostgreSQL:
-- **Users**: Tabela para gerenciar logins.
-- **Usuarios**: Tabela que armazena os dados dos usuários.
+- **Usarios**: Tabela para gerenciar logins.
+- **Novos_Usuarios**: Tabela que armazena os dados dos usuários.
 
 ---
 
